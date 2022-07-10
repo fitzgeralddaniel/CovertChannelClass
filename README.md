@@ -12,9 +12,6 @@ Handout - Materials to be passed out to students
   - Wireshark quick reference guide
   - Folders containing extra pcaps/exercises/stego images
   - Syllabus and grading Rubric for their challenge problem
-
-Handout.7z - Zip of Handout
-
   - Covert Channels Lecture Without Whitepaper.pptx - PA approved PowerPoint for lecture as of June 2020
   - Covert Channels Lecture Whitepaper Slides.pptx - PowerPoint lecture of the Wendzel whitepaper.
 	  (Day 1 and 2 are also in the Handout for the students, Master is for the instructor and is also in the Post Lab folder)
@@ -22,7 +19,6 @@ Handout.7z - Zip of Handout
 Post Lab unzipped
 
   - Lecture slides
-  - Rubric
   - Code for some of the channels
 
 
