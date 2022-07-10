@@ -14,7 +14,7 @@ Handout - Materials to be passed out to students
   - Syllabus and grading Rubric for their challenge problem
   - Covert Channels Lecture Without Whitepaper.pptx - PA approved PowerPoint for lecture as of June 2020
   - Covert Channels Lecture Whitepaper Slides.pptx - PowerPoint lecture of the Wendzel whitepaper.
-	  (Day 1 and 2 are also in the Handout for the students, Master is for the instructor and is also in the Post Lab folder)
+	  (Day 1 and 2 are also in the Handout for the students)
 
 Post Lab unzipped
 
