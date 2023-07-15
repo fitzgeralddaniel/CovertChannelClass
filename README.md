@@ -7,17 +7,17 @@ Intro to covert channels class taught for the AFRL Advanced Course in Engineerin
 
 ### Capt Daniel Fitzgerald
 
-### ACE 2022
+### ACE 2023
 
 Handout - Materials to be passed out to students
 
 - Exercise pcaps
-- Post Lab zip (Password given out after lab)
+- Post Lab zip (Password given out after lecture)
 - Wireshark quick reference guide
 - Folders containing extra pcaps/exercises/stego images
-- Syllabus and grading Rubric for their challenge problem
-- Covert Channels Lecture Without Whitepaper.pptx - PA approved PowerPoint for lecture as of June 2020
-- Covert Channels Lecture Whitepaper Slides.pptx - PowerPoint lecture of the Wendzel whitepaper. (Day 1 and 2 are also in the Handout for the students)
+- Covert Channels Lecture Day 1.pptx
+- Covert Channels Lecture Day 2.pptx
+- Covert Channels Lecture Whitepaper Slides.pptx - PowerPoint lecture of the Wendzel whitepaper.
 
 Post Lab unzipped
 
