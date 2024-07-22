@@ -7,7 +7,7 @@ Intro to covert channels class taught for the AFRL Advanced Course in Engineerin
 
 ### Capt Daniel Fitzgerald
 
-### ACE 2023
+### ACE 2024
 
 Handout - Materials to be passed out to students
 
