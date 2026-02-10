@@ -1,25 +1,35 @@
 import socket
+import argparse
 
 def receive_data(host, port, buffer_size):
     """
-    This function receives data from TCP and writes it into a buffer.
-    :param host: The host to receive data from.
-    :param port: The port to receive data from.
-    :param buffer_size: The size of the buffer to receive data into.
-    :return: The received data.
+    Receives data from TCP and returns it.
+
+    Args:
+        host (str): The host to bind to.
+        port (int): The port to listen on.
+        buffer_size (int): The size of the buffer to receive data into.
+
+    Returns:
+        bytes: The received data.
     """
     # Create a TCP/IP socket
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    
+    # Allow address reuse to avoid "Address already in use" errors during testing
+    sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
     # Bind the socket to the host and port
-    server_address = (host, int(port))
+    server_address = (host, port)
     sock.bind(server_address)
 
     # Listen for incoming connections
     sock.listen(1)
+    print(f"Listening on {host}:{port}...")
 
     # Wait for a connection
     connection, client_address = sock.accept()
+    print(f"Connection from {client_address}")
 
     try:
         # Receive data
@@ -28,10 +38,18 @@ def receive_data(host, port, buffer_size):
     finally:
         # Clean up the connection
         connection.close()
+        sock.close()
 
 def main():
-    # host variable is hardcoded to localhost (127.0.0.1), port is hardcoded to 8080, and buffer_size of 50
-    # Try changing these values or even allowing the user to input them at runtime or on the command line
-    print("Data received: " + receive_data("127.0.0.1", "8080", 50).decode("utf-8"))
+    parser = argparse.ArgumentParser(description="TCP Receiver Example")
+    parser.add_argument("host", help="The host IP to bind to (e.g., 127.0.0.1)")
+    parser.add_argument("port", type=int, help="The port to listen on")
+    parser.add_argument("buffer_size", type=int, help="The receive buffer size")
 
-main()
+    args = parser.parse_args()
+
+    data = receive_data(args.host, args.port, args.buffer_size)
+    print(f"Data received: {data.decode('utf-8')}")
+
+if __name__ == "__main__":
+    main()
