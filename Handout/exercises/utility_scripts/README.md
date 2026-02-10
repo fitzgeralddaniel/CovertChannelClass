@@ -6,4 +6,5 @@ This directory contains helper scripts used during the analysis of the pcap file
 *   `check_dp.py`: A preliminary script to check for DoublePulsar signatures (SMB Mid=81).
 *   `debug_smb.py`: A script to debug SMB traffic and print raw payloads, intended to help understand the SMB header structure.
 *   `debug_smb_v2.py`: An enhanced version of the SMB debug script that includes support for SMBv2 headers and hex dumping.
-*   `full_scan.py`: A script that attempts to scan the entire pcap for DoublePulsar signatures using Scapy.
+*   `exercise3-solver-debug.py`, `exercise3-payload-debug.py`, `exercise3-debug-full.py`, `exercise3-debug-conversation.py`: Various debug scripts used to analyze Exercise 3 (TOS, Payload, Full Conversation).
+
